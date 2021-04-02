@@ -52,3 +52,5 @@ https://habr.com/ru/company/cybersafe/blog/269513/
 https://habr.com/ru/post/335448/
 
 https://habr.com/ru/post/188444/
+
+https://networkguru.ru/nastroika-dmz-demilitarizovannaia-zona/
