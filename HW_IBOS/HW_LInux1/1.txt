@@ -1,0 +1,40 @@
+-- Logs begin at Wed 2021-03-24 10:53:24 UTC, end at Thu 2021-05-06 06:48:07 UTC. --
+May 06 06:45:07 ubserv1 systemd[1]: Started Helloo.
+May 06 06:45:07 ubserv1 server.bin[5013]: 2021/05/06 06:45:07 starting server on 0.0.0.0:9999
+May 06 06:45:07 ubserv1 server.bin[5013]: 2021/05/06 06:45:07 current working directory: /opt/app
+May 06 06:45:17 ubserv1 server.bin[5013]: 2021/05/06 06:45:17 incoming request GET /api/token from 127.0.0.1:59546 UA tracker-service
+May 06 06:45:17 ubserv1 server.bin[5013]: 2021/05/06 06:45:17 {"ID":"80f6b6a4d6098f06eca0","status":"ok"}
+May 06 06:45:27 ubserv1 server.bin[5013]: 2021/05/06 06:45:27 incoming request GET /api/token from 127.0.0.1:59548 UA tracker-service
+May 06 06:45:27 ubserv1 server.bin[5013]: 2021/05/06 06:45:27 {"ID":"6aba8c724ef1830ae2ab","status":"ok"}
+May 06 06:45:37 ubserv1 server.bin[5013]: 2021/05/06 06:45:37 incoming request GET /api/token from 127.0.0.1:59550 UA tracker-service
+May 06 06:45:37 ubserv1 server.bin[5013]: 2021/05/06 06:45:37 {"ID":"7584e6363d03a19017db","status":"ok"}
+May 06 06:45:47 ubserv1 server.bin[5013]: 2021/05/06 06:45:47 incoming request GET /api/token from 127.0.0.1:59552 UA tracker-service
+May 06 06:45:47 ubserv1 server.bin[5013]: 2021/05/06 06:45:47 {"ID":"bdb53aa8780598c95b40","status":"ok"}
+May 06 06:45:57 ubserv1 server.bin[5013]: 2021/05/06 06:45:57 incoming request GET /api/token from 127.0.0.1:59554 UA tracker-service
+May 06 06:45:57 ubserv1 server.bin[5013]: 2021/05/06 06:45:57 {"ID":"a5b1ae01c528f075eba2","status":"ok"}
+May 06 06:46:07 ubserv1 server.bin[5013]: 2021/05/06 06:46:07 incoming request GET /api/token from 127.0.0.1:59556 UA tracker-service
+May 06 06:46:07 ubserv1 server.bin[5013]: 2021/05/06 06:46:07 {"ID":"bfd80ce9232c7b42b130","status":"ok"}
+May 06 06:46:17 ubserv1 server.bin[5013]: 2021/05/06 06:46:17 incoming request GET /api/token from 127.0.0.1:59558 UA tracker-service
+May 06 06:46:17 ubserv1 server.bin[5013]: 2021/05/06 06:46:17 {"ID":"cd998d5e6e689d8be3cd","status":"ok"}
+May 06 06:46:27 ubserv1 server.bin[5013]: 2021/05/06 06:46:27 incoming request GET /api/token from 127.0.0.1:59560 UA tracker-service
+May 06 06:46:27 ubserv1 server.bin[5013]: 2021/05/06 06:46:27 {"ID":"60382d1e555edf9aab7e","status":"ok"}
+May 06 06:46:37 ubserv1 server.bin[5013]: 2021/05/06 06:46:37 incoming request GET /api/token from 127.0.0.1:59562 UA tracker-service
+May 06 06:46:37 ubserv1 server.bin[5013]: 2021/05/06 06:46:37 {"ID":"9bff90ee7a0e7038c8b1","status":"ok"}
+May 06 06:46:47 ubserv1 server.bin[5013]: 2021/05/06 06:46:47 incoming request GET /api/token from 127.0.0.1:59564 UA tracker-service
+May 06 06:46:47 ubserv1 server.bin[5013]: 2021/05/06 06:46:47 {"ID":"047b4e61ca0c758405db","status":"ok"}
+May 06 06:46:57 ubserv1 server.bin[5013]: 2021/05/06 06:46:57 incoming request GET /api/token from 127.0.0.1:59566 UA tracker-service
+May 06 06:46:57 ubserv1 server.bin[5013]: 2021/05/06 06:46:57 {"ID":"feb7a1c2fc3d5cb7e17a","status":"ok"}
+May 06 06:47:07 ubserv1 server.bin[5013]: 2021/05/06 06:47:07 incoming request GET /api/token from 127.0.0.1:59568 UA tracker-service
+May 06 06:47:07 ubserv1 server.bin[5013]: 2021/05/06 06:47:07 {"ID":"0421c9c6890e88245ec8","status":"ok"}
+May 06 06:47:17 ubserv1 server.bin[5013]: 2021/05/06 06:47:17 incoming request GET /api/token from 127.0.0.1:59570 UA tracker-service
+May 06 06:47:17 ubserv1 server.bin[5013]: 2021/05/06 06:47:17 {"ID":"7d1a13243f2287adec63","status":"ok"}
+May 06 06:47:27 ubserv1 server.bin[5013]: 2021/05/06 06:47:27 incoming request GET /api/token from 127.0.0.1:59572 UA tracker-service
+May 06 06:47:27 ubserv1 server.bin[5013]: 2021/05/06 06:47:27 {"ID":"c0def0329df7ab386bed","status":"ok"}
+May 06 06:47:37 ubserv1 server.bin[5013]: 2021/05/06 06:47:37 incoming request GET /api/token from 127.0.0.1:59574 UA tracker-service
+May 06 06:47:37 ubserv1 server.bin[5013]: 2021/05/06 06:47:37 {"ID":"ce95570fae42ad08a146","status":"ok"}
+May 06 06:47:47 ubserv1 server.bin[5013]: 2021/05/06 06:47:47 incoming request GET /api/token from 127.0.0.1:59576 UA tracker-service
+May 06 06:47:47 ubserv1 server.bin[5013]: 2021/05/06 06:47:47 {"ID":"f5d8e4434321da3cd2e4","status":"ok"}
+May 06 06:47:57 ubserv1 server.bin[5013]: 2021/05/06 06:47:57 incoming request GET /api/token from 127.0.0.1:59578 UA tracker-service
+May 06 06:47:57 ubserv1 server.bin[5013]: 2021/05/06 06:47:57 {"ID":"d8118d8197c1421387c7","status":"ok"}
+May 06 06:48:07 ubserv1 server.bin[5013]: 2021/05/06 06:48:07 incoming request GET /api/token from 127.0.0.1:59580 UA tracker-service
+May 06 06:48:07 ubserv1 server.bin[5013]: 2021/05/06 06:48:07 {"ID":"0b62b08a771e27b4f17c","status":"ok"}

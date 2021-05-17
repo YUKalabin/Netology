@@ -1,0 +1,11 @@
+[Unit]
+Description=Helloo
+After=network.target auditd.service
+
+[Service]
+ExecStart=/opt/app/server.bin
+Restart=on-failure
+WorkingDirectory=/opt/app
+
+[Install]
+WantedBy=multi-user.target
