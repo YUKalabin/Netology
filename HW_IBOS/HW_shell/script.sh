@@ -1,16 +1,16 @@
 #!/bin/bash
-if [$# -eq 2]
+if [ $# -eq 2 ]
 then    
-    if [$1 = "crypt"]
+    if [ $1 = "crypt" ]
     then
         echo $2 | base64
-        exit 0
+        exit
     elif [ $1 = "decrypt" ]
     then
         echo $2 | base64 -d
-        exit 0
+        exit
     else
-        echo "Wrong paremetr"
+        echo "Wrong parametr"
         exit 1
     fi
 else
