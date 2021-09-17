@@ -45,6 +45,7 @@ https://docs.microsoft.com/ru-ru/windows-server/identity/ad-fs/deployment/join-a
 Приведите ответ в виде снимков экрана.
 
 ![](pic/s1d.png)
+![](pic/d33.png)
 
 ## Задание 4*.
 Настройте любую политику GPO и проверьте, что она распространилась на рабочую станцию:
