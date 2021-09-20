@@ -23,4 +23,4 @@
 > Не нашёл по какому контенту фильтровать.
 > А так же не понял к какому типу классов отнести - successful-recon-limited или successful-recon-largescale или attempted-recon
 
-alert any any any <-> any any (msg:".xls;.doc and other"; content:”|?? ??|”; classtype:???????; )
+    alert any any any <-> any any (msg:".xls;.doc and other"; content:”|?? ??|”; classtype:???????; )
