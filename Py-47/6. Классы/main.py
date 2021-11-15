@@ -86,7 +86,19 @@ class Reviewer(Mentor):
 
 
 def avg_grade_stud_all(students, course):
-    
+    sum_grades = 0
+    count_grades = 0
+    for stud in students:
+        if course in stud.grades:
+            sum_grades += sum(stud.grades[course])
+            count_grades += len(stud.grades[course])
+    if count_grades > 0:
+        return (sum_grades / count_grades)
+    else:
+        return None
+
+
+
 
 
  
@@ -111,13 +123,16 @@ worst_reviewer = Reviewer('Some2', 'Buddy2')
 worst_reviewer.courses_attached += ['Python']
  
 cool_reviewer.rate_hw(best_student, 'Python', 10)
-cool_reviewer.rate_hw(best_student, 'Python', 10)
+cool_reviewer.rate_hw(best_student, 'Python', 9)
 cool_reviewer.rate_hw(best_student, 'Python', 10)
 
 best_student.rate_l(best_lecturer, 'Python', 8)
 best_student.rate_l(best_lecturer, 'Python', 7)
 best_student.rate_l(best_lecturer, 'Python', 9)
 
+students = [best_student, worst_student]
+
+print(avg_grade_stud_all(students, 'Python'))
  
 print(best_student.grades)
 print(best_lecturer.grades)
