@@ -85,6 +85,8 @@ class Reviewer(Mentor):
         f'Фамилия: {self.surname}\n')
 
 
+def avg_grade_stud_all(students, course):
+    
 
 
  
