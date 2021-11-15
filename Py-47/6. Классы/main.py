@@ -1,4 +1,5 @@
 class Student:
+
     def __init__(self, name, surname, gender):
         self.name = name
         self.surname = surname
@@ -40,6 +41,7 @@ class Student:
  
      
 class Mentor:
+
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
@@ -47,6 +49,7 @@ class Mentor:
         
 
 class Lecturer(Mentor):
+
     def __init__(self, name, surname):
         super().__init__(name, surname)
         self.grades = {}
@@ -71,6 +74,7 @@ class Lecturer(Mentor):
 
 
 class Reviewer(Mentor):
+
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
             if course in student.grades:
@@ -110,9 +114,6 @@ def avg_grade_lecturer_all(lecturer_s, course):
         return None
 
 
-
-
-
  
 best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
@@ -134,25 +135,32 @@ cool_reviewer.courses_attached += ['Python']
 worst_reviewer = Reviewer('Some2', 'Buddy2')
 worst_reviewer.courses_attached += ['Python']
  
-cool_reviewer.rate_hw(best_student, 'Python', 10)
+cool_reviewer.rate_hw(best_student, 'Python', 5)
 cool_reviewer.rate_hw(best_student, 'Python', 9)
 cool_reviewer.rate_hw(best_student, 'Python', 10)
+
+worst_reviewer.rate_hw(worst_student, 'Python', 7)
+worst_reviewer.rate_hw(worst_student, 'Python', 9)
+worst_reviewer.rate_hw(worst_student, 'Python', 8)
+
 
 best_student.rate_l(best_lecturer, 'Python', 8)
 best_student.rate_l(best_lecturer, 'Python', 7)
 best_student.rate_l(best_lecturer, 'Python', 9)
 
-worst_student.rate_l(best_lecturer, 'Python', 8)
-worst_student.rate_l(best_lecturer, 'Python', 7)
-worst_student.rate_l(best_lecturer, 'Python', 9)
+worst_student.rate_l(worst_lecturer, 'Python', 9)
+worst_student.rate_l(worst_lecturer, 'Python', 6)
+worst_student.rate_l(worst_lecturer, 'Python', 9)
 
 students = [best_student, worst_student]
 lecturer_s = [best_lecturer, worst_lecturer] 
 
+print(best_student)
+print(worst_student)
+print(best_lecturer)
+print(worst_lecturer)
+print(cool_reviewer)
+print(worst_reviewer)
+
 print(avg_grade_stud_all(students, 'Python'))
 print(avg_grade_lecturer_all(lecturer_s, 'Python'))
-print(best_student.grades)
-print(best_lecturer.grades)
-print(best_student)
-print(best_lecturer)
-print(cool_reviewer)
