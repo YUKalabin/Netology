@@ -97,6 +97,18 @@ def avg_grade_stud_all(students, course):
     else:
         return None
 
+def avg_grade_lecturer_all(lecturer_s, course):
+    sum_grades = 0
+    count_grades = 0
+    for stud in lecturer_s:
+        if course in stud.grades:
+            sum_grades += sum(stud.grades[course])
+            count_grades += len(stud.grades[course])
+    if count_grades > 0:
+        return (sum_grades / count_grades)
+    else:
+        return None
+
 
 
 
@@ -130,10 +142,15 @@ best_student.rate_l(best_lecturer, 'Python', 8)
 best_student.rate_l(best_lecturer, 'Python', 7)
 best_student.rate_l(best_lecturer, 'Python', 9)
 
+worst_student.rate_l(best_lecturer, 'Python', 8)
+worst_student.rate_l(best_lecturer, 'Python', 7)
+worst_student.rate_l(best_lecturer, 'Python', 9)
+
 students = [best_student, worst_student]
+lecturer_s = [best_lecturer, worst_lecturer] 
 
 print(avg_grade_stud_all(students, 'Python'))
- 
+print(avg_grade_lecturer_all(lecturer_s, 'Python'))
 print(best_student.grades)
 print(best_lecturer.grades)
 print(best_student)
