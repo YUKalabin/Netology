@@ -7,6 +7,9 @@ class Student:
         self.courses_in_progress = []
         self.grades = {}
 
+    def __lt__(self, other):
+        return (self.avg_grade() < other.avg_grade())
+
     def __str__(self):
         return (f'Имя: {self.name}\n'
         f'Фамилия: {self.surname}\n'
@@ -18,7 +21,6 @@ class Student:
         sum_grade = 0
         count_grade = 0
         for value in self.grades.values():
-            print(value)
             sum_grade += sum(value)
             count_grade += len(value)
         if count_grade > 0:
@@ -51,6 +53,9 @@ class Lecturer(Mentor):
         super().__init__(name, surname)
         self.grades = {}
 
+    def __lt__(self, other):
+        return (self.avg_grade() < other.avg_grade())
+            
     def __str__(self):
         return (f'Имя: {self.name}\n'
         f'Фамилия: {self.surname}\n'
@@ -60,7 +65,6 @@ class Lecturer(Mentor):
         sum_grade = 0
         count_grade = 0
         for value in self.grades.values():
-            print(value)
             sum_grade += sum(value)
             count_grade += len(value)
         if count_grade > 0:
@@ -156,3 +160,5 @@ print(best_lecturer.grades)
 print(best_student)
 print(best_lecturer)
 print(cool_reviewer)
+print(worst_student < best_student)
+print(best_lecturer > worst_lecturer)
