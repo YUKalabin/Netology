@@ -162,15 +162,11 @@ lecturer_s = [best_lecturer, worst_lecturer]
 print(best_student)
 print(worst_student)
 print(best_lecturer)
-<<<<<<< HEAD
 print(cool_reviewer)
 print(worst_student < best_student)
 print(best_lecturer > worst_lecturer)
-=======
 print(worst_lecturer)
 print(cool_reviewer)
 print(worst_reviewer)
-
-print(avg_grade_stud_all(students, 'Python'))
-print(avg_grade_lecturer_all(lecturer_s, 'Python'))
->>>>>>> a1a6e42e1648eaa2bad01fc266376c64a4a782cd
+print(worst_student < best_student)
+print(best_lecturer > worst_lecturer)
